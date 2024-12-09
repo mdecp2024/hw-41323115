@@ -115,21 +115,349 @@
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/fo4LkDLHfiM" width="560"></iframe></p>
 <p></p>
 <p><a href="https://gist.githubusercontent.com/41323115/d8f62ff5f9e3cbe980841f1a3389de34/raw/?scre453fdbf574181c2eafcbf67b07187a21860151f/w12-1">程式碼</a></p>
-<h3>w13_hw</h3>
 <p></p>
-<p><a href="https://gist.githubusercontent.com/41323115/7d01ecf383a33198916076b856992791/raw/252618a127a7f6115c08a7a0beda899097d71b08/w13-1.py">程式碼</a></p>
-<p><img alt="" height="248" src="/images/螢幕擷取畫面 2024-12-05 150916.png" width="289"/></p>
-<p></p>
-<p><a href="https://gist.githubusercontent.com/41323115/0949f0373ac5cd17192543dc9c4ea58d/raw/01816a31d480f8fcfc2a35da22d0f66df6d47ba6/w13-2.py">程式碼</a></p>
-<p><img alt="" height="221" src="/images/螢幕擷取畫面 2024-12-05 151147.png" width="317"/></p>
-<p></p>
-<p><a href="https://gist.githubusercontent.com/41323115/104b9dd31e0f15611f33c1ccf0fe2777/raw/971c234c034118323bc47e7e80896d3db2126bf9/w13-3.py">程式碼</a></p>
-<p><img alt="" height="204" src="/images/螢幕擷取畫面 2024-12-05 151635.png" width="301"/></p>
-<p></p>
+<h3>w13</h3>
 <p><a href="https://gist.githubusercontent.com/41323115/566326d3c15c48d4c8de0641cba4df7d/raw/44ec849415e8015d8c96cee83e6c2ad25870c195/w13-4.py">程式碼</a></p>
-<p><img alt="" height="211" src="/images/螢幕擷取畫面 2024-12-05 152415.png" width="246"/></p>
-<p></p>
-<p></p><h1>HW 2</h1>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width=400, height=400)
+brython_div = doc["brython_div1"]
+brython_div <= canvas
+
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 1
+
+# 設定對角線顏色為藍色
+ctx.strokeStyle = 'blue'  
+ctx.beginPath() 
+ctx.moveTo(40, 40)
+ctx.lineTo(270, 270)  # 第一條對角線
+ctx.stroke()
+</script>
+</p>
+<p><a href="https://gist.githubusercontent.com/41323115/7d01ecf383a33198916076b856992791/raw/252618a127a7f6115c08a7a0beda899097d71b08/w13-1.py">程式碼</a></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width=400, height=400)
+brython_div = doc["brython_div1"]
+brython_div <= canvas
+
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 1
+
+# 設定對角線顏色為藍色
+ctx.strokeStyle = 'blue'  
+ctx.beginPath() 
+ctx.moveTo(40, 40)
+ctx.lineTo(270, 270)  # 第一條對角線
+ctx.stroke()
+
+# 繪製第一個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'   # 設定正方形邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(40, 40, 230, 230)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+
+# 繪製第二個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'  # 設定邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(140, 140, 220, 220)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+</script>
+</p>
+<p><a href="https://gist.githubusercontent.com/41323115/0949f0373ac5cd17192543dc9c4ea58d/raw/01816a31d480f8fcfc2a35da22d0f66df6d47ba6/w13-2.py">程式碼</a></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width=400, height=400)
+brython_div = doc["brython_div1"]
+brython_div <= canvas
+
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 1
+
+# 設定對角線顏色為藍色
+ctx.strokeStyle = 'blue'  
+ctx.beginPath() 
+ctx.moveTo(40, 40)
+ctx.lineTo(270, 270)  # 第一條對角線
+ctx.stroke()
+
+# 繪製第一個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'   # 設定正方形邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(40, 40, 230, 230)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+
+# 繪製第二個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'  # 設定邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(140, 140, 220, 220)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+
+# 繪製兩個正方形的外圍圓形，顏色為黑色
+
+# 計算第一個圓的中心和半徑
+center_x1 = 40 + 230 / 2  # 第一個正方形的X中心
+center_y1 = 40 + 230 / 2  # 第一個正方形的Y中心
+radius1 = (230 * (2 ** 0.5)) / 2  # 半徑為對角線的一半
+
+# 設定圓的顏色為黑色
+ctx.strokeStyle = 'black'  
+ctx.beginPath()
+ctx.arc(center_x1, center_y1, radius1, 0, 2 * 3.14159)  # 繪製圓
+ctx.stroke()  # 描邊
+
+# 計算第二個圓的中心和半徑
+center_x2 = 140 + 220 / 2  # 第二個正方形的X中心
+center_y2 = 140 + 220 / 2  # 第二個正方形的Y中心
+radius2 = (220 * (2 ** 0.5)) / 2  # 半徑為對角線的一半
+
+# 繪製第二個圓
+ctx.beginPath()
+ctx.arc(center_x2, center_y2, radius2, 0, 2 * 3.14159)  # 繪製圓
+ctx.stroke()  # 描邊
+</script>
+</p><h3>w13_hw</h3>
+<p><a href="https://gist.githubusercontent.com/41323115/ed423ac80f0bbde34f5c2db476d547ee/raw/3dd4e57094cd860b5e1cb3dff8f8ce0853940ede/w13-5.py">程式碼</a></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width=400, height=400)
+brython_div = doc["brython_div1"]
+brython_div <= canvas
+
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 1  # 設定邊框線寬
+
+# 繪製對角線，顏色設定為藍色
+ctx.strokeStyle = 'blue'  # 設定對角線顏色為藍色
+ctx.beginPath()
+ctx.moveTo(20, 20)  # 調整起點位置
+ctx.lineTo(100, 100)  # 終點設為大正方形的右下角
+ctx.stroke()
+
+# 繪製外接圓，圓心位於第一個矩形的中央
+center_x1 = 20 + 80 / 2  # 第一個矩形的X中心
+center_y1 = 20 + 80 / 2  # 第一個矩形的Y中心
+
+# 半徑為第一個矩形對角線的一半
+radius1 = (80 * (2 ** 0.5)) / 2
+
+# 繪製外接圓
+ctx.strokeStyle = 'green'  # 設定圓的顏色為綠色
+ctx.beginPath()
+ctx.arc(center_x1, center_y1, radius1, 0, 2 * 3.14159)  # 圓心 (center_x1, center_y1) 和半徑
+ctx.stroke()
+
+# 繪製外接圓，圓心位於第二個矩形的中央
+center_x2 = 60 + 80 / 2  # 第二個矩形的X中心
+center_y2 = 60 + 80 / 2  # 第二個矩形的Y中心
+
+# 半徑為第二個矩形對角線的一半
+radius2 = (80 * (2 ** 0.5)) / 2
+
+# 繪製外接圓
+ctx.strokeStyle = 'purple'  # 設定圓的顏色為紫色
+ctx.beginPath()
+ctx.arc(center_x2, center_y2, radius2, 0, 2 * 3.14159)  # 圓心 (center_x2, center_y2) 和半徑
+ctx.stroke()
+
+# 繪製第一個矩形，並填充顏色
+ctx.fillStyle = 'yellow'  # 設定填充顏色為黃色
+ctx.strokeStyle = 'red'   # 設定邊框顏色為紅色
+
+ctx.rect(20, 20, 80, 80)  # 設定矩形的位置和大小，縮小為 80x80
+ctx.stroke()  # 繪製邊框
+ctx.beginPath()
+
+# 繪製第二個矩形
+ctx.strokeStyle = 'red'    # 設定邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(60, 60, 80, 80)  # 設定第二個矩形的位置和大小，縮小為 60x60
+ctx.stroke()  # 繪製邊框
+
+# 填充圓形的區域，排除與正方形的重疊部分
+ctx.globalCompositeOperation = 'source-over'  # 設定為填充模式
+ctx.fillStyle = 'lightblue'  # 設定圓形內部填充顏色為淺藍色
+
+# 填充第一個圓形
+ctx.beginPath()
+ctx.arc(center_x1, center_y1, radius1, 0, 2 * 3.14159)
+ctx.fill()
+
+# 填充第二個圓形
+ctx.beginPath()
+ctx.arc(center_x2, center_y2, radius2, 0, 2 * 3.14159)
+ctx.fill()
+
+# 刪除圓形與正方形重疊的區域
+ctx.globalCompositeOperation = 'destination-out'  # 設定為刪除重疊區域模式
+
+# 刪除第一個圓與正方形重疊的區域
+ctx.beginPath()
+ctx.rect(20, 20, 80, 80)  # 第一個矩形區域
+ctx.fill()
+
+# 刪除第二個圓與正方形重疊的區域
+ctx.beginPath()
+ctx.rect(60, 60, 80, 80)  # 第二個矩形區域
+ctx.fill()
+
+# 填充重疊區域的顏色（位於兩個正方形重疊的區域）
+ctx.globalCompositeOperation = 'source-over'  # 恢復填充模式
+ctx.fillStyle = 'orange'  # 設定重疊區域填充顏色為橙色
+
+# 填充第一個矩形的內部
+ctx.globalCompositeOperation = 'source-over'  # 設定為填充模式
+ctx.fillStyle = 'lightyellow'  # 設定填充顏色
+ctx.beginPath()
+ctx.rect(20, 20, 80, 80)  # 第一個矩形區域
+ctx.fill()
+
+# 填充第二個矩形的內部
+ctx.fillStyle = 'orange'  # 設定填充顏色
+ctx.beginPath()
+ctx.rect(60, 60, 80, 80)  # 第二個矩形區域
+ctx.fill()
+
+# 填充第一個圓形和矩形之間的空白區域
+ctx.fillStyle = 'lightblue'  # 設定填充顏色
+ctx.beginPath()
+ctx.arc(center_x1, center_y1, radius1, 0, 2 * 3.14159)
+ctx.rect(20, 20, 80, 80)  # 使用複合模式
+ctx.globalCompositeOperation = 'destination-over'  # 填充背景模式
+ctx.fill()
+
+# 填充第二個圓形和矩形之間的空白區域
+ctx.fillStyle = 'pink'  # 設定填充顏色
+ctx.beginPath()
+ctx.arc(center_x2, center_y2, radius2, 0, 2 * 3.14159)
+ctx.rect(60, 60, 80, 80)  # 使用複合模式
+ctx.globalCompositeOperation = 'destination-over'
+ctx.fill()
+
+# 重置繪圖操作模式
+ctx.globalCompositeOperation = 'source-over'
+
+# 重疊區域填充
+ctx.beginPath()
+ctx.rect(60, 60, 40, 40)  # 重疊區域的範圍 (兩個矩形重疊部分)
+ctx.fill()
+
+# 重新繪製斜線，確保它在最上層
+ctx.strokeStyle = 'blue'  # 設定斜線顏色為藍色
+ctx.beginPath()
+ctx.moveTo(20, 20)
+ctx.lineTo(100, 100)  # 斜線終點設為大正方形的右下角
+ctx.stroke()
+
+# 最後繪製所有的邊框，確保線條不被遮蓋
+ctx.strokeStyle = 'red'   # 第一個矩形的邊框顏色
+ctx.beginPath()
+ctx.rect(20, 20, 80, 80)  # 第一個矩形的位置和大小
+ctx.stroke()
+
+ctx.strokeStyle = 'red'  # 第二個矩形的邊框顏色
+ctx.beginPath()
+ctx.rect(60, 60, 80, 80)  # 第二個矩形的位置和大小
+ctx.stroke()
+
+ctx.strokeStyle = 'black'  # 圓形邊框顏色
+ctx.beginPath()
+ctx.arc(center_x1, center_y1, radius1, 0, 2 * 3.14159)  # 第一個圓
+ctx.stroke()
+
+ctx.beginPath()
+ctx.arc(center_x2, center_y2, radius2, 0, 2 * 3.14159)  # 第二個圓
+ctx.stroke()
+</script>
+</p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"><a href="https://gist.githubusercontent.com/41323115/7d01ecf383a33198916076b856992791/raw/252618a127a7f6115c08a7a0beda899097d71b08/w13-1.py"></a></div>
+<h1>HW 2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
 <p style="padding-left: 30px;">Python 課程教材: <a href="https://www.learnpythonwithjupyter.com/">https://www.learnpythonwithjupyter.com/</a> - PART 2 and Part 3</p>
 <hr/>

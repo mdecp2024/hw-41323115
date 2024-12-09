@@ -2,7 +2,7 @@
         <head>
         <title>cp_hw</title>
         <meta charset="utf-8">
-<meta property="head" content="H2">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -141,10 +141,162 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">HW 2 << <a href='HW 2.html'>Previous</a> <a href='HW 3.html'>Next</a> >> HW 3<br /><h1>HW 2 Exam</h1>
-<p>每六人為一組進行協同程式練習</p>
-<p>透過 Jupyterlab 協同網頁, 輪流指定各組編寫 HW 2 相關的程式練習, 以及網頁內容 (localhost 與 Codespaces 環境)編輯.</p>
-<br />HW 2 << <a href='HW 2.html'>Previous</a> <a href='HW 3.html'>Next</a> >> HW 3</div>
+    <div id="tipue_search_content">w12_hw << <a href='w12_hw.html'>Previous</a> <a href='w13_hw.html'>Next</a> >> w13_hw<br /><h1>w13</h1>
+<p><a href="https://gist.githubusercontent.com/41323115/566326d3c15c48d4c8de0641cba4df7d/raw/44ec849415e8015d8c96cee83e6c2ad25870c195/w13-4.py">程式碼</a></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="./../cmsimde/static/brython.js"></script>
+<script src="./../cmsimde/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width=400, height=400)
+brython_div = doc["brython_div1"]
+brython_div <= canvas
+
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 1
+
+# 設定對角線顏色為藍色
+ctx.strokeStyle = 'blue'  
+ctx.beginPath() 
+ctx.moveTo(40, 40)
+ctx.lineTo(270, 270)  # 第一條對角線
+ctx.stroke()
+</script>
+</p>
+<p><a href="https://gist.githubusercontent.com/41323115/7d01ecf383a33198916076b856992791/raw/252618a127a7f6115c08a7a0beda899097d71b08/w13-1.py">程式碼</a></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="./../cmsimde/static/brython.js"></script>
+<script src="./../cmsimde/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width=400, height=400)
+brython_div = doc["brython_div1"]
+brython_div <= canvas
+
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 1
+
+# 設定對角線顏色為藍色
+ctx.strokeStyle = 'blue'  
+ctx.beginPath() 
+ctx.moveTo(40, 40)
+ctx.lineTo(270, 270)  # 第一條對角線
+ctx.stroke()
+
+# 繪製第一個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'   # 設定正方形邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(40, 40, 230, 230)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+
+# 繪製第二個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'  # 設定邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(140, 140, 220, 220)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+</script>
+</p>
+<p><a href="https://gist.githubusercontent.com/41323115/0949f0373ac5cd17192543dc9c4ea58d/raw/01816a31d480f8fcfc2a35da22d0f66df6d47ba6/w13-2.py">程式碼</a></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="./../cmsimde/static/brython.js"></script>
+<script src="./../cmsimde/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width=400, height=400)
+brython_div = doc["brython_div1"]
+brython_div <= canvas
+
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 1
+
+# 設定對角線顏色為藍色
+ctx.strokeStyle = 'blue'  
+ctx.beginPath() 
+ctx.moveTo(40, 40)
+ctx.lineTo(270, 270)  # 第一條對角線
+ctx.stroke()
+
+# 繪製第一個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'   # 設定正方形邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(40, 40, 230, 230)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+
+# 繪製第二個正方形，邊框顏色為紅色
+ctx.strokeStyle = 'red'  # 設定邊框顏色為紅色
+ctx.beginPath()
+ctx.rect(140, 140, 220, 220)  # 設定正方形的位置和大小
+ctx.stroke()  # 繪製邊框
+
+# 繪製兩個正方形的外圍圓形，顏色為黑色
+
+# 計算第一個圓的中心和半徑
+center_x1 = 40 + 230 / 2  # 第一個正方形的X中心
+center_y1 = 40 + 230 / 2  # 第一個正方形的Y中心
+radius1 = (230 * (2 ** 0.5)) / 2  # 半徑為對角線的一半
+
+# 設定圓的顏色為黑色
+ctx.strokeStyle = 'black'  
+ctx.beginPath()
+ctx.arc(center_x1, center_y1, radius1, 0, 2 * 3.14159)  # 繪製圓
+ctx.stroke()  # 描邊
+
+# 計算第二個圓的中心和半徑
+center_x2 = 140 + 220 / 2  # 第二個正方形的X中心
+center_y2 = 140 + 220 / 2  # 第二個正方形的Y中心
+radius2 = (220 * (2 ** 0.5)) / 2  # 半徑為對角線的一半
+
+# 繪製第二個圓
+ctx.beginPath()
+ctx.arc(center_x2, center_y2, radius2, 0, 2 * 3.14159)  # 繪製圓
+ctx.stroke()  # 描邊
+</script>
+</p><br />w12_hw << <a href='w12_hw.html'>Previous</a> <a href='w13_hw.html'>Next</a> >> w13_hw</div>
         
     <!-- footer -->
       <div class="container">
