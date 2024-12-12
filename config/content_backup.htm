@@ -48,8 +48,8 @@
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/9xxtTE_MXy4" width="560"></iframe></p>
 <h4>第三題</h4>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/SiQodbjNgFA" width="560"></iframe></p>
-<div id="tipue_search_content">
 <p>以下方程式列印採用 <a href="https://www.mathjax.org/#gettingstarted">Mathjax Version 3 格式</a>.</p>
+<p></p>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <h4>set1 - Physics</h4>
 <p><span style="background-color: #ccffcc;">Use python to solve the problem: A jet touches down at velocity 310 km/h. Find the constant acceleration required to stop the aircraft 1000 m down the runway.</span></p>
@@ -143,7 +143,12 @@
 <p><a href="https://gist.githubusercontent.com/41323115/5093c2d955d8f36e8e209203948cfabf/raw/ecde6afa1e0ee8e37413b09b7e50432ce3cf0702/w12-8.py">程式碼</a><a href="/get_page/w12_hw/friends = [&quot;Geetha&quot;, &quot;Luca&quot;, &quot;Daisy&quot;, &quot;Juhan&quot;] dishes  = [&quot;sushi&quot;, &quot;burgers&quot;, &quot;tacos&quot;, &quot;pizza&quot;] print (&quot;My friends' names are:&quot;) print (friends) for index in range (0,4):     print (&quot;index:  &quot; + str(index))     print (&quot;friend: &quot; + friends[index])     print (&quot;Their favorite dishes are:&quot;)     print (dishes) for index in range (0,4):     print (&quot;index:  &quot; + str(index))     print (&quot;dish: &quot; + dishes[index]) for index in range (0,4):     print (&quot;My friend &quot; + friends[index] + &quot;'s favorite dish is &quot; + dishes[index])"></a></p>
 <p>12-9:</p>
 <p><a href="https://mdecp2024.github.io/hw-41323115/content/Brython.html?src=https://gist.githubusercontent.com/41323115/8d55d36644af8dee4e1ba8fba97ea096/raw/0ec8ad6d4563b0ed9228d0b6337ca61c688596f8/w12-9.py">解</a></p>
-<p><a href="https://gist.githubusercontent.com/41323115/8d55d36644af8dee4e1ba8fba97ea096/raw/0ec8ad6d4563b0ed9228d0b6337ca61c688596f8/w12-9.py">程式碼</a></p><h3>w13</h3>
+<p><a href="https://gist.githubusercontent.com/41323115/8d55d36644af8dee4e1ba8fba97ea096/raw/0ec8ad6d4563b0ed9228d0b6337ca61c688596f8/w12-9.py">程式碼</a></p>
+<p>12-10:</p>
+<p><a href="https://mdecp2024.github.io/hw-41323115/content/Brython.html?src=https://gist.githubusercontent.com/41323115/f5206c153abd205147298ad75e078475/raw/8c35d535ababaa8ba7d44c85f17a86778429bcb1/w12-10.py">解</a></p>
+<p><a href="https://gist.githubusercontent.com/41323115/f5206c153abd205147298ad75e078475/raw/8c35d535ababaa8ba7d44c85f17a86778429bcb1/w12-10.py">程式碼</a></p>
+<p></p>
+<h3>w13</h3>
 <p><a href="https://gist.githubusercontent.com/41323115/566326d3c15c48d4c8de0641cba4df7d/raw/44ec849415e8015d8c96cee83e6c2ad25870c195/w13-4.py">程式碼</a></p>
 <!-- 導入 brython 程式庫 -->
 <p>
@@ -444,7 +449,111 @@ ctx.lineTo(360, 360)
 ctx.stroke()
 </script>
 </p>
-<div id="brython_div1"><a href="https://gist.githubusercontent.com/41323115/7d01ecf383a33198916076b856992791/raw/252618a127a7f6115c08a7a0beda899097d71b08/w13-1.py"></a></div><h1>HW 2</h1>
+<p></p>
+<p></p>
+<h3>w14_ex</h3>
+<p><span>請根據兩個圓繪圖所圍成的</span><a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5eca62565d509668d731720f1994e127/raw/0e370b2ad0c429ab4c8905244022c27cfca8cfba/two_cicle_fill_ex1.py">區域</a><span>(目前圍成三個區域, 但若圓心移動可能彼此獨立)進行不同顏色著色, 條件是當各圓半徑與圓心座標變動時, 程式只需輸入兩個圓的圓心座標與半徑, 就可以完成各區域的著色任務.</span></p>
+<p><span><a href="https://mdecp2024.github.io/hw-41323115/content/Brython.html?src=https://gist.githubusercontent.com/41323115/7cb87979dd1f1f8cb95dbd2cc6c14f7c/raw/ab9ccf07e1990e44e5c4da0ed4cafb556ef9454a/w14.py">解</a></span></p>
+<p><span><a href="https://gist.githubusercontent.com/41323115/7cb87979dd1f1f8cb95dbd2cc6c14f7c/raw/ab9ccf07e1990e44e5c4da0ed4cafb556ef9454a/w14.py">程式碼</a></span></p>
+<p><span></span></p>
+<p><br/><br/><br/><br/><br/></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<div id="brython_div1"></div>
+<p>
+<script type="text/python3">
+from browser import html
+from browser import document as doc
+import random
+import math
+
+# 定義一個函式來初始化畫布
+def initialize_canvas(canvas_width=400, canvas_height=400, id="brython_div1"):
+    """
+    初始化畫布，創建一個指定大小的 Canvas 元素，並將其加到 HTML 文件中。
+    返回畫布元素和它的 2D 繪圖上下文。
+    """
+    canvas = html.CANVAS(width=canvas_width, height=canvas_height)
+    brython_div = doc[id]
+    brython_div <= canvas
+    ctx = canvas.getContext("2d")
+    return canvas, ctx
+
+# 定義一個隨機顏色生成函式
+def random_color_generator():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return f"rgb({r}, {g}, {b})"
+
+# 判斷點是否在圓內
+def is_point_in_circle(px, py, cx, cy, r):
+    return (px - cx) ** 2 + (py - cy) ** 2 <= r ** 2
+
+# 檢查所有圓是否有重疊
+def ensure_no_isolated_circles(circles):
+    overlap = [False] * len(circles)
+    for i in range(len(circles)):
+        for j in range(i + 1, len(circles)):
+            cx1, cy1, r1 = circles[i]
+            cx2, cy2, r2 = circles[j]
+            distance = math.sqrt((cx1 - cx2) ** 2 + (cy1 - cy2) ** 2)
+            if distance <= r1 + r2:  # 判斷是否有重疊
+                overlap[i] = True
+                overlap[j] = True
+    return all(overlap)
+
+# 使用者設定的多個圓，並進行掃描線填充
+def draw_circles():
+    canvas, ctx = initialize_canvas(400, 400)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+    color_dict = {}
+
+    # 隨機生成 5 到 10 個圓，確保沒有圓是孤立的
+    while True:
+        num_circles = random.randint(5, 10)
+        circles = [
+            (random.randint(50, 350), random.randint(50, 350), random.randint(50, 100))
+            for _ in range(num_circles)
+        ]
+        if ensure_no_isolated_circles(circles):
+            break
+
+    for py in range(0, canvas.height):
+        for px in range(0, canvas.width):
+            overlapping_indices = []
+
+            for i, (cx, cy, r) in enumerate(circles):
+                if is_point_in_circle(px, py, cx, cy, r):
+                    overlapping_indices.append(i)
+
+            if overlapping_indices:
+                overlap_key = "_".join(map(str, sorted(overlapping_indices)))
+                if overlap_key not in color_dict:
+                    color_dict[overlap_key] = random_color_generator()
+                current_color = color_dict[overlap_key]
+            else:
+                current_color = "white"
+
+            ctx.fillStyle = current_color
+            ctx.fillRect(px, py, 1, 1)
+
+draw_circles()
+</script>
+</p>
+<p></p><h1>HW 2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
 <p style="padding-left: 30px;">Python 課程教材: <a href="https://www.learnpythonwithjupyter.com/">https://www.learnpythonwithjupyter.com/</a> - PART 2 and Part 3</p>
 <hr/>
@@ -733,4 +842,3 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </p>
-</div>
